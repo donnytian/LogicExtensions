@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: dotnet build --no-restore LogicExtensions.sln
       - name: Test
-        run: dotnet test --framework net6.0 --no-build --verbosity normal LogicExtensions.sln
+        run: dotnet test --framework net7.0 --no-build --verbosity normal LogicExtensions.sln
 
       # Publish
       - name: publish on version change
