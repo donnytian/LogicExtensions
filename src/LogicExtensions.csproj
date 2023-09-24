@@ -1,14 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.1</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>default</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.1</Version>
+        <Version>0.0.2</Version>
         <Authors>Donny Tian</Authors>
         <Description>Handy extensions for .NET basic types.</Description>
+        <PackageProjectUrl>https://github.com/donnytian/LogicExtensions</PackageProjectUrl>
+        <RepositoryType>https://github.com/donnytian/LogicExtensions</RepositoryType>
     </PropertyGroup>
 
 </Project>

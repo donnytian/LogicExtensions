@@ -19,7 +19,7 @@ public static class StringManipulationExtensions
             return string.Empty;
         }
 
-        return s.Length <= maxLength ? s : s.Substring(0, maxLength) + suffix;
+        return s!.Length <= maxLength ? s : s.Substring(0, maxLength) + suffix;
     }
 
     /// <summary>
@@ -29,7 +29,7 @@ public static class StringManipulationExtensions
     /// <returns>A reversed version from input.</returns>
     public static string Reverse(this string? s)
     {
-        return string.IsNullOrEmpty(s) ? string.Empty : Reverse(s, 0, s.Length);
+        return string.IsNullOrEmpty(s) ? string.Empty : Reverse(s, 0, s!.Length);
     }
 
     /// <summary>
@@ -51,7 +51,7 @@ public static class StringManipulationExtensions
             startIndex = 0;
         }
 
-        if (startIndex >= s.Length - 1)
+        if (startIndex >= s!.Length - 1)
         {
             return s;
         }
@@ -86,7 +86,7 @@ public static class StringManipulationExtensions
             return string.Empty;
         }
 
-        if (length > s.Length)
+        if (length > s!.Length)
         {
             return s;
         }
@@ -134,7 +134,7 @@ public static class StringManipulationExtensions
         }
 
         var skipped = 0;
-        var index = s.IndexOf(token, comparison);
+        var index = s!.IndexOf(token, comparison);
 
         while (index >= 0)
         {
@@ -166,7 +166,7 @@ public static class StringManipulationExtensions
             return string.Empty;
         }
 
-        var index = s.LastIndexOf(token, comparison);
+        var index = s!.LastIndexOf(token, comparison);
 
         return index > 0 ? s.Substring(0, index) : string.Empty;
     }
@@ -184,7 +184,7 @@ public static class StringManipulationExtensions
             return string.Empty;
         }
 
-        if (length > s.Length)
+        if (length > s!.Length)
         {
             return s;
         }
@@ -232,7 +232,7 @@ public static class StringManipulationExtensions
         }
 
         var skipped = 0;
-        var index = s.IndexOf(token, comparison);
+        var index = s!.IndexOf(token, comparison);
 
         while (index >= 0)
         {
@@ -264,7 +264,7 @@ public static class StringManipulationExtensions
             return string.Empty;
         }
 
-        var index = s.LastIndexOf(token, comparison);
+        var index = s!.LastIndexOf(token, comparison);
 
         return index >= 0 ? s.Substring(index + token.Length) : string.Empty;
     }

@@ -24,7 +24,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\LogicExtensions.csproj" />
       <ProjectReference Include="..\src\LogicExtensions.csproj" />
     </ItemGroup>
 

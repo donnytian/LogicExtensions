@@ -82,7 +82,7 @@ public static class StringConversionExtensions
             return Array.Empty<byte>();
         }
 
-        var bytes = new byte[value.Length * sizeof(char)];
+        var bytes = new byte[value!.Length * sizeof(char)];
         Buffer.BlockCopy(value.ToCharArray(), 0, bytes, 0, bytes.Length);
         return bytes;
     }

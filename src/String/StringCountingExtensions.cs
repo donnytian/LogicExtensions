@@ -20,7 +20,7 @@ public static class StringCountingExtensions
         }
 
         // Simple implementation for utf16 which is the default encoding where chars are of a fixed size.
-        return s.Length * sizeof(char);
+        return s!.Length * sizeof(char);
     }
 
     /// <summary>
