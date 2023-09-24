@@ -51,7 +51,7 @@ public static class StringExpressionExtensions
     /// <param name="propertyPath">The property path in the form of 'Prop1.Prop2.Prop3'.</param>
     /// <param name="host">The root host object. Only used for the real type detection for 'dynamic' type.</param>
     /// <param name="pathStartsWithHostType">Whether the propertyPath starts with the host name like 'obj.Prop1.Prop2.Prop3'.</param>
-    public static Func<THost, TProperty> CreateConditionalGetter<THost, TProperty>(
+    public static Func<THost?, TProperty?> CreateConditionalGetter<THost, TProperty>(
         this string? propertyPath, THost? host = default, bool pathStartsWithHostType = false)
     {
         var selector = ToSelectorLambda<THost, TProperty>(propertyPath, host, pathStartsWithHostType);
