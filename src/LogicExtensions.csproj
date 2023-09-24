@@ -6,11 +6,13 @@
         <Nullable>enable</Nullable>
         <LangVersion>default</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.2</Version>
+        <Version>0.0.3</Version>
         <Authors>Donny Tian</Authors>
         <Description>Handy extensions for .NET basic types.</Description>
         <PackageProjectUrl>https://github.com/donnytian/LogicExtensions</PackageProjectUrl>
         <RepositoryType>https://github.com/donnytian/LogicExtensions</RepositoryType>
+        <SignAssembly>true</SignAssembly>
+        <AssemblyOriginatorKeyFile>LogicExtensions.snk</AssemblyOriginatorKeyFile>
     </PropertyGroup>
 
 </Project>
